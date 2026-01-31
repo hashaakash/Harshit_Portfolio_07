@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harshit's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <span class="logo-text">Harshit soni</span>
+        </div>
+    </header>
+    <!-- ===== Header / Navbar ===== -->
+  <header class="navbar">
+    <h2 class="logo">Harshit</h2>
+    <nav>
+      <a href="#about">About Me</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-badges">
+                <img src="photos_harshit/face2.jpeg" alt="Profile" class="hero-image">
+            </div>
+
+            <h1 class="hero-text">
+                I'm a <span id="rotating-text"></span>
+            </h1>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-header">
+            <h2 class="section-label">about me</h2>
+        </div>
+
+        <div class="about-grid">
+            <div class="about-text">
+                <p>I’m Harshit Soni, a passionate video editor specializing in creating engaging, high-quality content
+                    using DaVinci Resolve, Adobe Premiere Pro, Filmora, and Photoshop. I focus on storytelling, pacing,
+                    and visual impact to turn raw footage into compelling videos that connect with audiences and meet
+                    creative goals.
+
+                    With a strong eye for color grading, smooth transitions, clean audio, and modern editing styles, I
+                    work across YouTube videos, reels, social media content, and promotional edits. I value clear
+                    communication, fast turnaround, and client satisfaction, and I constantly refine my skills to stay
+                    aligned with evolving digital trends.</p>
+                <a href="#about" class="btn-primary">Learn More</a>
+            </div>
+            <div class="about-image">
+                <img src="photos_harshit/about-image.jpeg" alt="About">
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <h2 class="projects-title">My Projects🚀</h2>
+
+        <div class="project-list">
+            <div class="project-item">
+                <div class="project-number">/01</div>
+                <div class="project-details">
+                    <img src="photos_harshit/productreview.JPG" alt="Project 1" class="project-thumb">
+                    <div class="project-info">
+                        <h6>Created a product review video using Filmora, involving research, scriptwriting, filming, and editing. Highlighted key features and user insights, gaining views/engagement.</h6>
+                        <p class="project-category">Product Review</p>
+                        <div class="project-view" data-video="videos/video1.mp4">VIEW</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-item">
+                <div class="project-number">/02</div>
+                <div class="project-details">
+                    <img src="photos_harshit/project2.JPG" alt="Project 2" class="project-thumb">
+                    <div class="project-info">
+                        <h6>Produced a promotional video for a client using DaVinci Resolve, incorporating motion graphics, transitions, and visual storytelling to enhance brand impact and audience engagement. Managed scripting, editing, and post-production end-to-end.</h6>
+                        <p class="project-category">Advertisement</p>
+                        <div class="project-view" data-video="videos/video2.mp4">VIEW</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-item">
+                <div class="project-number">/03</div>
+                <div class="project-details">
+                    <img src="photos_harshit/project3.JPG" alt="Project 3" class="project-thumb">
+                    <div class="project-info">
+                        <h6>Created a professional educational video using chroma key (green screen), motion graphics, and audio enhancement in DaVinci Resolve to deliver clear, engaging instructional content.</h6>
+                        <p class="project-category">Educational Videos</p>
+                        <div class="project-view" data-video="videos/video3.mp4">VIEW</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-item">
+                <div class="project-number">/04</div>
+                <div class="project-details">
+                    <img src="photos_harshit/project4.jpeg" alt="Project 4" class="project-thumb">
+                    <div class="project-info">
+                        <h6>Created high-energy velocity edit videos synced to phonk music using DaVinci Resolve, applying speed ramps, beat drops, motion effects, and cinematic transitions to maximize visual impact and audience retention.</h6>
+                        <p class="project-category">Velocity Edit</p>
+                        <div class="project-view" data-video="videos/video4.mp4">VIEW</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-item">
+                <div class="project-number">/05</div>
+                <div class="project-details">
+                    <img src="photos_harshit/project5.jpeg" alt="Project 5" class="project-thumb">
+                    <div class="project-info">
+                        <h6>Shot and produced a cinematic video using professional framing, lighting, camera movement, and color grading in DaVinci Resolve to create emotionally engaging visual storytelling.</h6>
+                        <p class="project-category">Cinematography</p>
+                        <div class="project-view" data-video="videos/video5.mp4">VIEW</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 🎬 VIDEO MODAL -->
+    <div class="video-modal" id="videoModal">
+        <div class="video-box">
+            <span class="close-video" id="closeVideo">&times;</span>
+            <video id="modalVideo" controls autoplay></video>
+        </div>
+    </div>
+
+    <!-- CTA Section -->
+    <section class="cta" id="contact">
+        <h2 class="cta-title">LET'S CAPTURE YOUR STORY</h2>
+        <a href="mailto:harshit.editzz65071@gmail.com" class="cta-btn">GET IN TOUCH</a>
+
+        <div class="moving-images">
+            <div class="moving-strip">
+                <img src="photos_harshit/1.jpeg" alt="">
+                <img src="photos_harshit/2.jpeg" alt="">
+                <img src="photos_harshit/3.jpeg" alt="">
+                <img src="photos_harshit/4.jpeg" alt="">
+                <img src="photos_harshit/5.jpeg" alt="">
+                <img src="photos_harshit/6.jpeg" alt="">
+                <img src="photos_harshit/2.jpeg" alt="">
+                <img src="photos_harshit/1.jpeg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>CONTACT</h4>
+                <a href="mailto:hello@henry.com">harshit.editzz65071@gmail.com</a>
+                <a>9399927939</a>
+            </div>
+            <div class="footer-section">
+                <h4>SOCIAL</h4>
+                <a href="https://youtube.com/@harshit.edditzz?si=2NsXP_WNutShOExW" target="_blank">🎬YOUTUBE</a>
+                <a href="https://www.instagram.com/harshit.edittzz?igsh=MTR1OTNhMjFhNnJtcQ==" target="_blank">📸INSTAGRAM</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-brand">
+                <h3>Harshit Soni</h3>
+                <p>© 2026 Harshit</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
